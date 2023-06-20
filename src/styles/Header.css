@@ -1,0 +1,95 @@
+.App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.right-menu {
+    display: flex;
+}
+
+.menu {
+    padding: 25px;
+}
+
+.kasa-logo {
+    width: 125px;
+}
+
+.layout {
+    margin: 35px;
+
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.typo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.typo:hover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+
+}
+
+.body-app {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+
+}
+
+
+.emptyspace {
+    height: 124px;
+}
+
+@media screen and (max-width: 760px) {
+    .layout {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .typo {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .menu {
+        padding: 15px;
+    }
+
+    .typo:hover {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FF6060;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}

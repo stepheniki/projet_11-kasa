@@ -1,0 +1,47 @@
+.bloc_stars {
+    width: 196px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red_star {
+    width: 25px;
+    height: 25px;
+}
+
+.grey_star {
+    width: 25px;
+    height: 25px;
+}
+
+.flex-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------- Start Responsive  -------- */
+@media screen and (max-width: 720px) {
+
+
+    .red_star {
+        width: 15px;
+        height: 15px;
+    }
+
+    .grey_star {
+        width: 15px;
+        height: 15px;
+    }
+
+
+
+    .bloc_stars {
+        width: 120px;
+        height: 15px;
+        display: flex;
+    }
+}
+
+/* -------- End Responsive  -------- */

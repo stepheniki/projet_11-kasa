@@ -1,0 +1,56 @@
+.Error404 {
+    margin: 50px 0;
+    text-align: center;
+    color: #FF6060;
+}
+
+.ErrortoHome {
+    color: #FF6060;
+    text-decoration: underline;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.text404 {
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.oups {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 760px) {
+    .text404 {
+        font-size: 96px;
+        line-height: 136px;
+    }
+
+    .oups {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .ErrortoHome {
+        color: #FF6060;
+        text-decoration: underline;
+        font-family: Montserrat;
+        font-size: 14px;
+    }
+}

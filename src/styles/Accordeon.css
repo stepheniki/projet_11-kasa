@@ -1,0 +1,77 @@
+.Collaps {
+    margin-bottom: 30px;
+}
+
+.AboutCollaps {
+    margin-top: 30px;
+    padding: 10px 100px;
+}
+
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.content {
+    margin-top: 0;
+    padding: 20px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-radius: 0 0 5px 5px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34.22px;
+    margin-bottom: 35px;
+}
+
+.not-display {
+    display: none;
+}
+
+.icon-rotate {
+    transform: rotate(180deg);
+}
+
+svg {
+    transform: rotate(0deg);
+    transition: transform 300ms;
+    width: 1rem;
+}
+
+
+@media screen and (max-width: 760px) {
+    .AboutCollaps {
+        padding: 0px;
+    }
+
+    .content {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: -20px;
+    }
+
+    .emptyspace {
+        display: none;
+    }
+
+    .collapsible {
+        font-size: 13px;
+    }
+}

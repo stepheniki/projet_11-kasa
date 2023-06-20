@@ -1,0 +1,90 @@
+.paysage-fond {
+    height: 170px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    opacity: 75%;
+    background-color: black;
+}
+
+.paysage {
+
+    height: 170px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    opacity: 75%;
+    background-color: black;
+}
+
+.paysage-apropos {
+    height: 170px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    background-blend-mode: darken;
+    opacity: 75%;
+    background-color: black;
+}
+
+
+
+.banner-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 99%;
+    z-index: 1;
+
+}
+
+h1 {
+    display: block;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+.responsive {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .banner-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: white;
+        position: relative;
+        text-align: center;
+        bottom: 98%;
+        z-index: 1;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .non-responsive {
+        display: none;
+    }
+
+    .paysage-fond {
+        height: 225px;
+        border-radius: 25px;
+    }
+
+    .paysage-apropos {
+        height: 223px;
+    }
+
+    .paysage {
+        height: 111px;
+    }
+}
