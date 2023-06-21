@@ -88,3 +88,29 @@ h1 {
         height: 111px;
     }
 }
+
+@media  (min-width:761px) and (max-width: 1023px) {
+    .banner-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5vh;
+        color: white;
+        position: relative;
+        text-align: center;
+        bottom: 18vh;
+        z-index: 1;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .responsive {
+        display: none;
+    }
+    .non-responsive {
+        display: block;
+        font-size: 5.6vw;
+    text-align: center;
+    }
+}
+
