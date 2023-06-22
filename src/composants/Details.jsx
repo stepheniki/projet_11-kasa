@@ -90,6 +90,7 @@ function Details({ selectedId }) {
     )
 
     // Si id n'existe pas => Error404
+    // si l’utilisateur essaie d’accéder à une page de détails pour un logement qui n’existe pas
   } else {
     return <Error404 />
   }

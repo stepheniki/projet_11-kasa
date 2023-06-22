@@ -6,13 +6,17 @@ import ArrowLeft from '../assets/ArrowLeft.png'
 // DIAPORAMA DE CHAQUE LOGEMENT
 
 export default function Gallery({ slides }) {
+// current= suivre l’index de l’image actuellement affichée dans le diaporama
+// État initialisé à "0" pour afficher la première image par défaut
   const [current, setCurrent] = useState(0)
   const length = slides.length
 
+  //  afficher l’image suivante dans le diaporama
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
   }
 
+  //  afficher l’image précédente dans le diaporama
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
@@ -43,7 +47,7 @@ export default function Gallery({ slides }) {
       <div className="image-counter">
         {current + 1}/
         {
-          length // Compteur d'images
+          length // affiche le nombre total d’images dans le diaporama
         }
       </div>
 

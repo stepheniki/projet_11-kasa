@@ -3,9 +3,12 @@ import { ReactComponent as Arrow } from '../assets/arrow.svg'
 
 
 // COMPOSANT COLLAPSE - Prend en entrée deux propriétés : "title" et "content"
+// Réutilisable: ces proporiétés permettent de passer des données au composant pour personnaliser son affichage
+// Réutilisable : les classes CSS permettent de contrôler l’apparence du composant en fonction de son état.
 
 const Collapse = ({ title, content }) => {
   // Définition de l'état "isOpen" pour contrôler si le contenu est affiché ou non
+  // Usestate permet à React de mettre à jour le DOM lorsque l’état change, sans avoir à re-rendre l’ensemble du composant.
   const [isOpen, setIsOpen] = useState(false)
 
   // Fonction pour gérer le clic sur le bouton pour ouvrir/fermer le contenu
@@ -25,16 +28,20 @@ const Collapse = ({ title, content }) => {
 
   return (
     <div className="Collaps">
-      <button
+      <button // création du bouton de l'accordéon
         type="button"
         className={className.button}
         onClick={() => {
+          // fonction pour mettre à jour l’état isOpen et afficher ou masquer le contenu en conséquence.
           clickCollaps()
         }}
       >
-        {title}{' '}
-        <div className={`${isOpen ? 'icon-rotate' : ''}`}>
-          <Arrow />
+        {title}{' ' // espace entre le titre et l'icone
+        } 
+        <div className={`${isOpen ? 'icon-rotate' // pivoter l’icône de 180 degrés afin d’indiquer que le contenu est ouvert
+         : ''}`}>
+          <Arrow // icône en forme de flèche
+          />
         </div>
       </button>
 
