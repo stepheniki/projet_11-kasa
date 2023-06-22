@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import ArrowRight from '../assets/ArrowRight.png'
 import ArrowLeft from '../assets/ArrowLeft.png'
 
+
+// DIAPORAMA DE CHAQUE LOGEMENT
+
 export default function Gallery({ slides }) {
   const [current, setCurrent] = useState(0)
   const length = slides.length

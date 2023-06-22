@@ -1,3 +1,5 @@
+// ACCORDEON A PROPOS
+
 export const AccordeonContenu = [
     {
         "title": "Fiabilité",

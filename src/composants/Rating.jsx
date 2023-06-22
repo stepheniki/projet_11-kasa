@@ -1,11 +1,9 @@
-// import modules
 import '../styles/Rating.css'
-
-// import images
 import redStar from '../assets/redstar.png'
 import greyStar from '../assets/greystar.png'
 
-// Component
+// NOMBRE D'ETOILES - RATING
+
 function Rating({ stars }) {
   const range = [1, 2, 3, 4, 5]
 

@@ -6,6 +6,9 @@ import { useParams } from 'react-router-dom'
 import Rating from './Rating'
 import Error404 from '../pages/Error404'
 
+
+// FICHE POUR CHAQUE LOGEMENT - DETAILS
+
 function Details({ selectedId }) {
   const { id } = useParams()
   const value = Logements.find((logement) => logement.id === id)
@@ -14,44 +17,53 @@ function Details({ selectedId }) {
   if (typeof value !== 'undefined') {
     return (
       <>
-        <Slideshow slides={value.pictures} />
+        <Slideshow slides={value.pictures // DIAPORAMA DE LA LOCATION
+        }  /> 
         <div className="flex-title-name">
-          <div className="details-title">{value.title}</div>
+          <div className="details-title">{value.title // TITRE DE LA LOCATION
+          }</div>
           <div className="flex-picture-name-desktop">
-            <div className="details-name">{value.host.name}</div>
+            <div className="details-name">{value.host.name // IDENTITE DU LOUEUR - DESKTOP
+            }</div>
             <img
-              className="details-picture"
+              className="details-picture" 
               alt="profil"
-              src={value.host.picture}
+              src={value.host.picture // PHOTO DE PROFIL DU LOUEUR - DESKTOP
+              }
             />
           </div>
         </div>
 
-        <div className="details-location">{value.location}</div>
+        <div className="details-location">{value.location // LIEU DE LA LOCATION
+        }</div> 
         <div className="flex-rating">
           <div>
             {value.tags.map((tag) => (
-              <span className="details-tags" key={tag}>
+              <span className="details-tags" key={tag // TAGS 
+              }>
                 {tag}
               </span>
             ))}
           </div>
           <div className="rating-desktop">
-            <Rating stars={value.rating} />
+            <Rating stars={value.rating // NOMBRE D'ETOILES - DESKTOP
+            } />
           </div>
         </div>
 
         <div className="flex-picture-name-mobile">
           <div className="rating-mobile">
-            <Rating stars={value.rating} />
+            <Rating stars={value.rating // NOMBRE D'ETOILES - MOBILE
+            } />
           </div>
 
           <div className="flex-mobile">
-            <div className="details-name">{value.host.name}</div>
+            <div className="details-name">{value.host.name // IDENTITE DU LOUEUR - MOBILE
+            }</div>
             <img
               className="details-picture"
               alt="profil"
-              src={value.host.picture}
+              src={value.host.picture} // PHOTO DE PROFIL DU LOUEUR - MOBILE
             />
           </div>
         </div>
@@ -60,15 +72,17 @@ function Details({ selectedId }) {
           <div className=" collapse--housePage ">
             <Accordeon
               selectedId={id}
-              title="Description"
-              content={value.description}
+              title="Description" 
+              content={value.description // ACCORDEON DESCRIPTION DU LOGEMENT
+              }
             />
           </div>
           <div className=" collapse--housePage">
             <Accordeon
               selectedId={id}
-              title="Equipements"
-              content={value.equipments}
+              title="Equipements" 
+              content={value.equipments // ACCORDEON EQUIPEMENTS DU LOGEMENT
+            }
             />
           </div>
         </div>

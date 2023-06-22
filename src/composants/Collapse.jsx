@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { ReactComponent as Arrow } from '../assets/arrow.svg'
 
+
+// COMPOSANT COLLAPSE
+
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false)
   const clickCollaps = () => {

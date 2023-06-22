@@ -9,6 +9,8 @@ import '../styles/Header.css'
 import '../styles/Footer.css'
 import '../styles/Accordeon.css'
 
+// PAGE A PROPOS
+
 function APropos() {
   return (
     <>
@@ -16,19 +18,24 @@ function APropos() {
       <div className="body-app">
         <div className="layout">
           <div className="App-header">
-            <img src={logo} alt="Logo-Kasa" className="kasa-logo" />
-            <Header />
+            <img src={logo} alt="Logo-Kasa" className="kasa-logo" // LOGO
+            />
+            <Header // MENU
+            />
           </div>
-          <BannerApropos />
+          <BannerApropos // BANNIERE
+          />
 
-          <div className="AboutCollaps">
+          <div className="AboutCollaps" // ACCORDEON A PROPOS
+          >
             {AccordeonContenu.map(({ title, content }, index) => (
               <Accordeon key={`${index}`} title={title} content={content} />
             ))}
           </div>
         </div>
         <div className="emptyspace"></div>
-        <Footer />
+        <Footer // FOOTER
+        />
       </div>
     </>
   )
