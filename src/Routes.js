@@ -5,14 +5,21 @@ import APropos from "./pages/Apropos";
 import Location from "./pages/Location"
 import Error404 from "./pages/Error404"
 
+
+/*    REACT ROUTER - ROUTES    */
 const AppRoutes = () => {
   return (
-    <Router>
-      <Routes>
+    <Router // encapsuler l’ensemble des routes de l'application
+    >
+      <Routes // les différentes routes de l'application
+      >
+         {/* path= l’URL de la route --- element= spécifie le composant à afficher pour cette route      */}
         <Route path="/" element={<Accueil />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/Accueil" element={<Accueil />} />
         <Route path="/Location/:id" element={<Location />} />
+
+         {/*     * = route générique qui capture toutes les URL qui ne correspondent à aucune des routes précédentes    */}
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
