@@ -13,7 +13,7 @@ const AppRoutes = () => {
     >
       <Routes // les différentes routes de l'application
       >
-         {/* path= l’URL de la route --- element= spécifie le composant à afficher pour cette route      */}
+         {/* path= l’URI de la route --- element= spécifie le composant à afficher pour cette route      */}
         <Route path="/" element={<Accueil />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/Accueil" element={<Accueil />} />
