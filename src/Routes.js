@@ -16,7 +16,6 @@ const AppRoutes = () => {
          {/* path= l’URI de la route --- element= spécifie le composant à afficher pour cette route      */}
         <Route path="/" element={<Accueil />} />
         <Route path="/APropos" element={<APropos />} />
-        <Route path="/Accueil" element={<Accueil />} />
         <Route path="/Location/:id" element={<Location />} />
 
          {/*     * = route générique qui capture toutes les URL qui ne correspondent à aucune des routes précédentes    */}
